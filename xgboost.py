@@ -1,19 +1,9 @@
-# import torch
-# import math
-# from collections import Counter, namedtuple
-
-# # Simple Node structure
-# Node = namedtuple("Node", ["feature", "threshold", "left", "right", "value", "is_leaf"])
 import torch
 import math
 from collections import Counter, namedtuple
 Node = namedtuple("Node", ["feature", "threshold", "left", "right", "value", "is_leaf"])
 
-# class DecisionTreeTorch:
-#     def __init__(self, max_depth=3, min_samples_split=2):
-#         self.max_depth = max_depth
-#         self.min_samples_split = min_samples_split
-#         self.root = None
+
 class DecisionTreeTorch:
     def __init__(self, max_depth=3, min_samples_split=2):
         self.max_depth = max_depth
