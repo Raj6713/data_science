@@ -33,3 +33,5 @@ if __name__ == "__main__":
     kl_loss = KLDivergence(reduction="mean", log_input=False)
     loss = kl_loss(P, Q)
     print("KL Divergence", loss.item())
+    loss = kl_loss(Q, P)
+    print("KL Divergence", loss.item())
